@@ -1,0 +1,13 @@
+body {
+    background-color: #f5f5f5;
+    }
+
+.pic {
+position: relative;
+left: 30px;
+}
+
+.nav {
+    position: relative;
+    left: 20px;
+}
