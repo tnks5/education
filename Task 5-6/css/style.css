@@ -57,14 +57,14 @@ ul {
   margin-left: auto;
 }
 
-.special-list {
+.list {
 
   display: flex;
 
   flex-wrap: wrap;
 }
 
-.special-list-item {
+.list-item {
 width: 50%;
 }
 
