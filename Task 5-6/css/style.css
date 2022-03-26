@@ -1,3 +1,36 @@
+/* fonts */
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family:  'Muller', sans-serif;
+  background-color: #E5E5E5;
+}
+
 a {
   text-decoration: none;
 }
@@ -8,14 +41,26 @@ ul {
   list-style: none;
 }
 
+.site-button {
+  padding: 13px 20px;
+  background-color: transparent;
+  border: 1px solid #CC9933;
+  color: #CC9933;
+  border-radius: 10px;
+}
+
+
 
 .container {
  width: 1170px;
  margin: 0 auto;
 }
 
+
+
 .header-top {
   padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,10 +75,26 @@ ul {
   margin-right: 40px;
 }
 
+.tel-numb {
+  color: #666666;;
+}
+
+.login {
+  background-image: url(/img/keyboard_tab.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
+  color: #CC9933;
+}
+
 .header-bot {
-  padding: 12px 0;
+  padding: 0px 45px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  background-color: white;
+  height: 70px;
 }
 
 .nav-list {
@@ -42,25 +103,95 @@ ul {
   height: 100%;
 }
 
-.nav-list-item:not(:last-child) {
-  margin-right: 45px;
+.header-nav-link {
+  color: #666666;;
 }
 
+.nav-list-item:not(:last-child) {
+  margin-right: 45px;
+
+}
+.nav-list-item:last-child {
+  margin-right: 114px;
+}
+
+.header-btn:not(:first-child) {
+  margin-left: 35px;
+  }
+
 .special-content {
-  height: 540px;
   display: flex;
   justify-content: space-between;
 }
-
 .left {
   display: flex;
-  justify-content:flex-start;
   flex-direction: column;
+  justify-content: space-between;
+
 }
 
-.right {
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+
+.services-item {
   width: 50%;
+}
 
+.special-article:not(last-child) {
+  width: 573px;
+  height: 268px;
+}
+
+.special-article:first-child {
+  background-image: url(/img/mal.png);
+  background-repeat: no-repeat;
 
 }
 
+.special-article:last-child {
+background-image: url(/img/Rectangle\ 15.png);
+background-repeat: no-repeat;
+background-position: bottom;
+}
+
+.special-article-room {
+  width: 573px;
+  height: 540px;
+  background-image: url(/img/Group\ 13.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefit-item {
+  width: 275px;
+padding-bottom: 20px;
+
+}
+
+.benefit-item:nth-last-child(-n+4) {
+  padding-bottom: 0px;
+}
+
+.accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.accommodation-list-item {
+  width: 374px;
+
+}
